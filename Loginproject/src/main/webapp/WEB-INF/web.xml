@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Loginproject</display-name>
+    <welcome-file-list>
+    <welcome-file>LoginForm.html</welcome-file>
+    
+    
+    
+   
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>GetHandler</servlet-name>
+    <servlet-class>com.assistedservlet.GetHandler</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PostHandler</servlet-name>
+    <servlet-class>com.assistedservlet.PostHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetHandler</servlet-name>
+    <url-pattern>/gethandler</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostHandler</servlet-name>
+    <url-pattern>/posthandler</url-pattern>
+  </servlet-mapping>
+  <servlet>
+        <servlet-name>NameServlet</servlet-name>
+        <servlet-class>com.assistedservlet.NameServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+        <servlet-name>NameServlet</servlet-name>
+        <url-pattern>/name</url-pattern>
+   </servlet-mapping>
+    <servlet>
+    <servlet-name>InterfaceDemo</servlet-name>
+    <servlet-class>com.assistedservlet.InterfaceDemo</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>InterfaceDemo</servlet-name>
+    <url-pattern>/interface</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.assistedservlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Dashboard</servlet-name>
+    <servlet-class>com.assistedservlet.Dashboard</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>Dashboard</servlet-name>
+    <url-pattern>/dashboard</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+ 
+  
+  
+</web-app>
