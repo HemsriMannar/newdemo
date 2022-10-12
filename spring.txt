@@ -1,0 +1,26 @@
+spring container-container of beans,objects
+It handles life cyle of objects.
+spring needs to own the object.
+Ask spring container provide object to the object outside the spring.
+object-- object factory-- it providee object to the object
+Spring xml has blue print 
+
+
+
+
+Every member variable in the spring bean has to be configured in the 
+xml file by providing reference.
+
+If beansid and class memeber variable is matched we can autowire
+by using tag autowire="byName" in xml
+autowire="byType"- it looks fro the type 
+autowire="constructor"
+
+
+scope- 
+*Singleton- create only one instance eventhough we call the 
+instance many times.By defult it is singleton.
+*prototype - new bean is created everytime for every requestor every ref.
+wait for getbean to create instance. scope="prototype"
+
+
